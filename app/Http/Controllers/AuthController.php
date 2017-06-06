@@ -5,10 +5,18 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use Socialite;
+use App\User;
 
 class AuthController extends Controller
 {
 	
+    /**
+     * Where to redirect users after login.
+     *
+     * @var string
+     */
+    protected $redirectTo = '/home';
+    
     /**
      * Redirect the user to the OAuth Provider.
      *
