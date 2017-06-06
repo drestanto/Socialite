@@ -8,6 +8,7 @@ use Socialite;
 
 class AuthController extends Controller
 {
+	
     /**
      * Redirect the user to the OAuth Provider.
      *
