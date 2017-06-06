@@ -8,8 +8,6 @@ use Socialite;
 
 class AuthController extends Controller
 {
-    // Some methods which were generated with the app
-    [...]
     /**
      * Redirect the user to the OAuth Provider.
      *
@@ -57,5 +55,5 @@ class AuthController extends Controller
             'provider_id' => $user->id
         ]);
     }
-    
+
 }
